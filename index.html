@@ -35,11 +35,12 @@
 	 
 	 
 	 function whatClick(){
-		 var myInvio = document.getElementsByClassName("lp_send_button")[0];
-		 if(myInvio){
-			console.log("questa e' prechat"); 
-		 }
+		 
 		 $('.lp_submit_button').click(function(){
+			 var myInvio = document.getElementsByClassName("lp_send_button")[0];
+			 if(myInvio){
+				 console.log("questa e' prechat"); 
+			 }
 			 console.log($('#sel_4259601').find(":selected").text());
 			 console.log($('#sel_4259602').find(":selected").text());
 			 console.log($('#sel_4259603').find(":selected").text());
