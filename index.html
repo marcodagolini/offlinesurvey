@@ -30,12 +30,15 @@
 
  	
  <script>
-	var submit = $('.lp_submit_button').length;
-  var refreshIntervalId;
-  refreshIntervalId = setInterval(function(){
-  
-  
-  }, 500);
+
+	 var refreshIntervalId;
+	 refreshIntervalId = setInterval(function(){
+		 var mySubmit = document.getElementsByClassName("lp_submit_button")[0];
+		 if (mySubmit){
+			 clearInterval(refreshIntervalId);
+		 }
+	 
+	 }, 500);
 	 
 	 
 
