@@ -31,14 +31,19 @@
  	
  <script>
 
-	 var refreshIntervalId;
-	 refreshIntervalId = setInterval(function(){
-		 var mySubmit = document.getElementsByClassName("lp_submit_button")[0];
-		 if (mySubmit){
-			 clearInterval(refreshIntervalId);
-		 }
-	 
-	 }, 500);
+	 var refreshIntervalId1;
+	 $(document).ready(function(){
+		 refreshIntervalId1 = setInterval(function(){
+			 var mySubmit = document.getElementsByClassName("lp_submit_button")[0];
+			 if (mySubmit){
+				 clearInterval(refreshIntervalId1);
+				 $('.lp_submit_button').click(function(){
+					 console.log($('#sel_4259601').find(":selected").text());
+					 console.log($('#sel_4259602').find(":selected").text(););
+				 });
+			 }
+		 }, 500);
+	 });
 	 
 	 
 
